@@ -2,3 +2,10 @@
     display: flex;
     list-style: none;
 }
+
+@mixin imageflex {
+    display: flex;
+    align-items: center;
+    margin-right: 3.75rem;
+}
+
