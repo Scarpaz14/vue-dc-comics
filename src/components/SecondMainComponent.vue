@@ -1,25 +1,9 @@
 <template>
    <div class="special-link">
        <div class="container">
-            <div class="image-special-link">
-                <img src="../assets/image/buy-comics-digital-comics.png" alt="">
-                <h3>Digital comics</h3>
-            </div>
-            <div class="image-special-link">
-                <img src="../assets/image/buy-comics-digital-comics.png" alt="">
-                <h3>Digital comics</h3>
-            </div>
-             <div class="image-special-link">
-                <img src="../assets/image/buy-comics-digital-comics.png" alt="">
-                <h3>Digital comics</h3>
-            </div>
-             <div class="image-special-link">
-                <img src="../assets/image/buy-comics-digital-comics.png" alt="">
-                <h3>Digital comics</h3>
-            </div>
-             <div class="image-special-link">
-                <img src="../assets/image/buy-comics-digital-comics.png" alt="">
-                <h3>Digital comics</h3>
+            <div class="image-special-link" v-for="(img, index) in images" :key="index">
+                <img :src="`/image/${src}`" alt="">
+                <p>{{img.text}}</p>
             </div>
         </div>
     </div>
@@ -27,7 +11,34 @@
 
 <script>
 export default {
-    name: 'SecondMainComponent'
+    name: 'SecondMainComponent',
+    data() {
+        return {
+            images: [
+                {
+                    src: '../assets/image/dc-logo.png',
+                    text: "digital comics",
+                },
+                {
+                    src: '',
+                    text: "dc merchandise",
+                },
+                {
+                    src: '',
+                    text: "subscription",
+                },
+                {
+                    src: '',
+                    text: "comic shop locator",
+                },
+                {
+                    src: '',
+                    text: "dc power visa",
+                },
+            ],
+        }
+
+    },
 
 }
 </script>
@@ -43,15 +54,22 @@ export default {
     & .container{
         display: flex;
         justify-content: center;
+        padding: 0 30px;
     }
 
     .image-special-link {
-        @include imageflex
+        @include imageflex;
+        width: 100%;
     }
 
     & img{
         width: 4.375rem;
         margin-right: 0.625rem;
+        height: 50px;
+    }
+
+    & p {
+        text-transform: uppercase;
     }
 }
 
