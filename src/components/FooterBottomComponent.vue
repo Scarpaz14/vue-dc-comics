@@ -9,11 +9,7 @@
                 <h4>FOLLOW US</h4>
             </div>
             <ul class="image-social">
-                <li><a href=""><img src="../assets/image/footer-facebook.png" alt=""></a></li>
-                <li><a href=""><img src="../assets/image/footer-twitter.png" alt=""></a></li>
-                <li><a href=""><img src="../assets/image/footer-youtube.png" alt=""></a></li>
-                <li><a href=""><img src="../assets/image/footer-pinterest.png" alt=""></a></li>
-                <li><a href=""><img src="../assets/image/footer-periscope.png" alt=""></a></li>
+                <li v-for="(social, index) in socialImages" :key="index"><a href=""><img :src="social.src" alt=""></a></li>
             </ul>
         </div>
     </div>
@@ -22,7 +18,34 @@
 
 <script>
 export default {
-    name: 'FooterBottomComponent'
+    name: 'FooterBottomComponent',
+    data() {
+        return {
+            socialImages: [
+                {
+                    src:  require("../assets/image/footer-facebook.png"),
+                    text: "digital comics",
+                },
+                {
+                    src: require("../assets/image/footer-twitter.png"),
+                    text: "dc merchandise",
+                },
+                {
+                    src: require("../assets/image/footer-youtube.png"),
+                    text: "subscription",
+                },
+                {
+                    src: require("../assets/image/footer-pinterest.png"),
+                    text: "comic shop locator",
+                },
+                {
+                    src: require("../assets/image/footer-periscope.png"),
+                    text: "dc power visa",
+                },
+            ],
+        }
+
+    },
 
 }
 </script>
