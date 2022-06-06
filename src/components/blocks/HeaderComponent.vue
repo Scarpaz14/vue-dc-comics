@@ -2,7 +2,7 @@
     <div class="container">
         <header class="header">
             <div class="header__logo">
-                <img src="../assets/image/dc-logo.png" alt="logo">
+                <img src="../../assets/image/dc-logo.png" alt="logo">
             </div>
             <nav class="header__nav">
                 <ul>
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/mixins.scss';
 .header{
     padding: 1.25rem 0;
     display: flex;
@@ -90,18 +90,17 @@ export default {
         }
 
 
-        a{
-            margin: 0 1.25rem;
-            text-decoration: none;
-            color:var(--secondary-color);
-            text-transform: uppercase;
+    a{
+        margin: 0 1.25rem;
+        text-decoration: none;
+        color:var(--secondary-color);
+        text-transform: uppercase;
 
-        }
+    &:hover{
+        color: var(--primary-color);
+            }
 
-         a:hover{
-            color: var(--primary-color);
-            
-        }
+    }
     }
 
 }

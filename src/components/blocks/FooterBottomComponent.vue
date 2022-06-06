@@ -23,23 +23,23 @@ export default {
         return {
             socialImages: [
                 {
-                    src:  require("../assets/image/footer-facebook.png"),
+                    src:  require("../../assets/image/footer-facebook.png"),
                     text: "digital comics",
                 },
                 {
-                    src: require("../assets/image/footer-twitter.png"),
+                    src: require("../../assets/image/footer-twitter.png"),
                     text: "dc merchandise",
                 },
                 {
-                    src: require("../assets/image/footer-youtube.png"),
+                    src: require("../../assets/image/footer-youtube.png"),
                     text: "subscription",
                 },
                 {
-                    src: require("../assets/image/footer-pinterest.png"),
+                    src: require("../../assets/image/footer-pinterest.png"),
                     text: "comic shop locator",
                 },
                 {
-                    src: require("../assets/image/footer-periscope.png"),
+                    src: require("../../assets/image/footer-periscope.png"),
                     text: "dc power visa",
                 },
             ],
@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/mixins.scss';
 
 .footer-bottom{
     background-color: #303030;
@@ -63,7 +63,7 @@ export default {
     align-items: center;
     height: 6.25rem;
 
-    & button{
+     button{
         padding: 0.9375rem;
         border: 0.125rem solid #0282f9;
         background-color:inherit;
@@ -71,11 +71,11 @@ export default {
         font-weight: bold;
     }
 
-    & .social-container{
+     .social-container{
         display: flex;
         align-items: center;
 
-        & .image-social{
+        .image-social{
             display: flex;
 
             li{
@@ -83,11 +83,11 @@ export default {
             }
         }
 
-        & img{
+        img{
             margin: 0 0.625rem;
         }
 
-        & h4{
+        h4{
             color: #0282f9;
             margin-right: 0.9375rem;
         }

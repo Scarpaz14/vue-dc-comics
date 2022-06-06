@@ -10,11 +10,11 @@
 
 <script>
 
-import HeaderComponent from './components/HeaderComponent.vue';
-import MainComponent from './components/MainComponent.vue';
-import FooterTopComponent from './components/FooterTopComponent.vue';
-import FooterMediumComponent from './components/FooterMediumComponent.vue';
-import FooterBottomComponent from './components/FooterBottomComponent.vue';
+import HeaderComponent from './components/blocks/HeaderComponent.vue';
+import MainComponent from './components/blocks/MainComponent.vue';
+import FooterTopComponent from './components/blocks/FooterTopComponent.vue';
+import FooterMediumComponent from './components/blocks/FooterMediumComponent.vue';
+import FooterBottomComponent from './components/blocks/FooterBottomComponent.vue';
 export default {
   name: 'App',
   components: {

@@ -16,23 +16,23 @@ export default {
         return {
             images: [
                 {
-                    src:  require("../assets/image/buy-comics-digital-comics.png"),
+                    src:  require("../../assets/image/buy-comics-digital-comics.png"),
                     text: "digital comics",
                 },
                 {
-                    src: require("../assets/image/buy-comics-merchandise.png"),
+                    src: require("../../assets/image/buy-comics-merchandise.png"),
                     text: "dc merchandise",
                 },
                 {
-                    src: require("../assets/image/buy-comics-subscriptions.png"),
+                    src: require("../../assets/image/buy-comics-subscriptions.png"),
                     text: "subscription",
                 },
                 {
-                    src: require("../assets/image/buy-comics-shop-locator.png"),
+                    src: require("../../assets/image/buy-comics-shop-locator.png"),
                     text: "comic shop locator",
                 },
                 {
-                    src: require("../assets/image/buy-dc-power-visa.svg"),
+                    src: require("../../assets/image/buy-dc-power-visa.svg"),
                     text: "dc power visa",
                 },
             ],
@@ -44,14 +44,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/mixins.scss';
 
 .special-link{
     background-color: var(--primary-color);
     padding: 3.125rem;
     color: white;
 
-    & .container{
+    .container{
         display: flex;
         justify-content: center;
         padding: 0 30px;
@@ -62,13 +62,13 @@ export default {
         width: 100%;
     }
 
-    & img{
-        width: 4.375rem;
+    img{
+        width: 50px;
         margin-right: 0.625rem;
 
     }
 
-    & p {
+    p {
         text-transform: uppercase;
     }
 }

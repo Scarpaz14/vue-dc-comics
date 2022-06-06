@@ -26,7 +26,7 @@
             </div>
         </div>
          <div class="footer-logo">
-            <img class="logo" src="../assets/image/dc-logo-bg.png" alt="">
+            <img class="logo" src="../../assets/image/dc-logo-bg.png" alt="">
         </div>
     </div>
 </footer>
@@ -158,7 +158,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/mixins.scss';
+@import '../../assets/style/mixins.scss';
 
 .container{
     display: flex;
@@ -168,34 +168,34 @@ export default {
 .footer-top{
     display: flex;
     align-items: center;
-    background-image:url(../assets/image/footer-bg.jpg);
+    background-image:url(../../assets/image/footer-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    & h3{
+    h3{
         color:white;
         margin-bottom: 0.625rem;
     }
 
-    & .col-footer{
+     .col-footer{
        padding: 30px;
     }
 
-    & ul {
+    ul {
         list-style: none;
     }
 
-    & a{
+    a{
         text-decoration: none;
         color: #959585;
     }
 
-    & a:hover{
+    a:hover{
         color:var(--primary-color);
     }
 
-    & li, h3{
+    li, h3{
         padding: 0.3125rem;
     }
 }
